@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script type="text/JavaScript" src="luckySevens.js"></script>
+        <link href="style.css" rel="stylesheet">
+        <title>Lucky Sevens</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <h2 class="display-3 col-sm-12 text-center">Lucky Sevens</h2>
+            </div>
+            <form class="justify-content-center" id="luckySevensForm">
+                <div class="form-group row text-right">
+                    <label for="startingBet" class="col-sm-2 col-form-label offset-sm-3 justify-content-center">Staring Bet</label>
+                    <div class="col-sm-2">
+                        <input type="number" step=".01" placeholder="$0.00" class="form-control" id="startingBet">
+                    </div>
+                </div>
+                <div class="form-group row text-center">
+                    <div class="col-sm-12">
+                        <button type="button" class="btn btn-primary" onclick="clearForm()"><span id="clear">Clear</span></button>
+                        <button type="button" class="btn btn-primary" onclick="rollDice()"><span id="submitButton">Play</span></button>
+                    </div>
+                </div>
+            </form>
+            <hr>
+            <table class="table table-bordered justify-content-center" style="display: none" id="resultTable">
+                <thead>
+                    <tr class="table-primary">
+                        <th>Starting Bet</th>
+                        <th><span id="1"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-secondary">
+                        <th>Total Rolls Before Going Broke</th>
+                        <td><span id="2"></span></td>
+                    </tr>
+                    <tr>
+                        <th>Highest Amount Won</th>
+                        <td><span id="3"></span></td>
+                    </tr>
+                    <tr class="table-secondary">
+                        <th>Roll Count at Highest Amount Won</th>
+                        <td><span id="4"></span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

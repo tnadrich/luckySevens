@@ -1,0 +1,11 @@
+hr {
+    width: 40%; 
+    border-top: 1px solid #000000;
+}
+h2 {
+    padding-bottom: 20px;
+}
+.table-bordered {
+    width: 50%;
+    margin: 0 auto;
+}
